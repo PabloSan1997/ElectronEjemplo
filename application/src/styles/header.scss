@@ -1,0 +1,28 @@
+header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background: black;
+    button{
+        background: none;
+        border: none;
+        color: rgb(197, 197, 197);
+        height: fit-content;
+        margin: auto 2rem 0.5rem auto;
+        cursor: pointer;
+        font-size: 1.2rem;
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    h1{
+        margin: auto 2rem;
+        color: rgb(209, 209, 209);
+    }
+    span{
+        margin: auto 2rem 0.5rem 0;
+        font-size: 1.1rem;
+        color: rgb(209, 209, 209);
+    }
+}

@@ -1,0 +1,52 @@
+.contenedor{
+    width: 95%;
+    margin:2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    gap: 2rem;
+    .tarea{
+        &.hecha{
+            background: rgb(1, 26, 1);
+            border-color:green ;
+            .area_buttons{
+                .ico{
+                    color: rgb(177, 255, 177);
+                }
+            }
+            .texto{
+                color: rgb(177, 255, 177);
+            }
+            .create{
+                color: rgb(32, 68, 32);
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 2px black solid;
+        background: gray;
+        .area_buttons{
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto; 
+            display: flex;
+            justify-content: space-between;
+            .ico{
+                width: 1.5rem;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .texto{
+            margin:1rem auto 1.2rem;
+            font-size: 1.3rem;
+        }
+        .create{
+            margin:0;
+            font-size: 0.9rem;
+        }
+    }
+}

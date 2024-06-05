@@ -1,0 +1,46 @@
+.addFormulario{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    .error{
+        color: rgb(197, 45, 45);
+        margin: 1rem 0 0;
+    }
+    label{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: rgb(228, 228, 228);
+    }
+    textarea{
+        padding: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        border-radius: 0.3rem;
+        background: rgb(22, 22, 22);
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        color: rgb(235, 235, 235);
+        &::placeholder{
+            color: rgb(175, 175, 175);
+        }
+    }
+    button{
+        margin:1rem auto auto 0;
+        padding: 0.2rem 1rem;
+        font-size: 1.1rem;
+        border: 2px solid black;
+        background: rgb(44, 44, 44);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            background: rgb(31, 31, 31);
+        }
+        &:active{
+            background: rgb(73, 73, 73);
+        }
+    }
+}
